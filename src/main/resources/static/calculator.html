@@ -1,0 +1,75 @@
+<!-- HTML file for the webpage -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "calculator.css" rel = "stylesheet">
+    <title> Calculator </title>
+    <script src = "calculator.js" defer></script>
+</head>
+<body>
+    <main>
+        <!-- Main box container -->
+        <div class = "mainContainer">
+
+            <!-- Main box title -->
+            <header class = "title">
+                Grade Calculator
+            </header>
+
+            <!-- Inner box container -->
+            <div class = "innerContainer">
+                <header class = "innerRed">
+                    <br>Activities<br><br>
+                </header>
+                <div id = "desc">
+                    Give grades to the numeric activities: <br><br>
+                </div>
+
+                <!-- Table -->
+                <table id = "innerTable" class = "table">
+                    <tr>
+                        <th class = "tableHeader">Name</th>
+                        <th class = "tableHeader">Short Name</th>
+                        <th class = "tableHeader">Weight</th>
+                        <th class = "tableHeader">Grade</th>
+                        <th class = "tableHeader">Percent</th>
+                    </tr>
+                    <tr>
+                        <td class = "tableData"> Activity 1 </td>
+                        <td class = "tableData"> A1 </td>
+                        <td class = "tableData"> <input id = "weight1" type = "text" class = "inputBox"> </td> <!-- Weight -->
+                        <td class = "tableData"> 
+                            <input id = "gradeNumerator1" type = "text" class = "inputBox"> <!-- Grade Numerator -->
+                            <span class = "division"> / </span>
+                            <input id = "gradeDenominator1" type = "text" class = "inputBox"> <!-- Grade Denominator -->
+                        </td>
+                        <td id = "percent1" class = "tableData"> </td>
+                    </tr>
+                </table>
+
+                <!-- Add row button -->
+                <button id = "addRowButton" class = "rowButton"> 
+                    ADD ROW 
+                </button>
+
+                <!-- Result -->
+                <div class = "innerRed"> 
+                    Result
+                </div>
+                <div id = "calcResult" class = "calculationResult"> </div>
+
+                <!-- Calculation result and bottom two buttons-->
+                <div class = "buttonBar">
+                    <button id = "weightedBtn" class = "barButtons"> WEIGHTED </button>
+                    <button id = "meanBtn" class = "barButtons"> MEAN </button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
